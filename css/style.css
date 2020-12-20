@@ -1,0 +1,95 @@
+section {
+  background-color: #f5f3f4;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section h1 {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 7rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 5rem;
+}
+.separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 100%;
+  max-width: 8.4rem;
+  height: 0.25rem;
+  background-color: #e5383b;
+  position: relative;
+}
+.line-left::before,
+.line-right::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.6rem solid transparent;
+}
+.line-right::before {
+  border-right-color: #e5383b;
+  right: 0;
+}
+.line-left::before {
+  border-left-color: #e5383b;
+  left: 0;
+}
+.asterisk {
+  font-size: 1.2rem;
+  margin: 0 1.6rem;
+}
+.headline h5 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  letter-spacing: 3px;
+}
+.btn-container {
+  margin-bottom: 8rem;
+}
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 2px;
+}
+.btn-style {
+  font-size: 1.1rem;
+  background-color: #e5383b;
+  padding: 0.9rem 1.8rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.5s;
+  color: #fff;
+}
+.btn-style:hover,
+.btn-tyle:focus {
+  color: #fff;
+  background-color: #161a1d;
+}
+.social {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social a i {
+  font-size: 4.5rem;
+  padding: 10px;
+  color: #161a1d;
+  transition: 1s;
+}
+.social a i:hover,
+.social a i:focus {
+  color: #e5383b;
+}
