@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior Vitteri</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../img/favi.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/proyectos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Herr+Von+Muellerhoff&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">
+            <div class="line a"></div>
+            <div class="line"></div>
+            <div class="line b"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><img src="../img/favi.png" alt=""></a></li>
+            <li><a href="#home">PROYECTOS</a></li>
+            <li><a href="#contact">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="proyects" id="home">
+            <h1 id="home">Proyectos</h1>
+            <div class="container">
+                <div class="container-hero">
+                    <div class="container-img">
+                        <h2>proximamente</h2>
+                    </div>
+                </div>
+                <div class="container-hero">
+                    <div class="container-img">
+                        <h2>proximamente</h2>
+                    </div>
+                </div>
+                <div class="container-hero">
+                    <div class="container-img">
+                        <h2>proximamente</h2>
+                    </div>
+                </div>
+                <div class="container-hero">
+                    <div class="container-img">
+                        <h2>proximamente</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="title">
+                <h1>Contáctame</h1>
+            </div>
+            <form class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name" required>
+                    <input type="email" class="input" placeholder="Email Address" required>
+                    <input type="text" class="input" placeholder="Phone" required>
+                    <input type="text" class="input" placeholder="Subject">
+                </div>
+                <div class="msg">
+                    <textarea placeholder="Message" maxlength="140"></textarea>
+                    <button class="btn">send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copy">
+                <p>&copy2020 junior vitteri</p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://github.com/Juni-p"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/ju_vitteri/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/MrJuniorVG"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+        });
+    </script>
+</body>
+
+</html>
